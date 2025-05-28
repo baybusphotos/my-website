@@ -1,0 +1,511 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #F5F5F5;
+  color: #333333;
+  line-height: 1.6;
+}
+
+
+
+/* Header */
+header {
+  height: 160px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F1E2D0;
+  padding: 2px 40px;
+}
+
+/* Navigation */
+nav {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.ham-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+.ham-nav-links li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #555555;
+}
+
+.book-button {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #555555;
+}
+
+/* Header Title */
+.header-title {
+  flex: 1;
+  text-align: center;
+}
+
+.header-title h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 4rem;
+  color: #333333;
+  margin: 0;
+}
+
+/* Logo */
+.logo-container {
+  position: absolute;
+  left: 200px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-image {
+  height: 100%;
+  width: auto;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero2 {
+  background: url('images/hero2.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 4rem;
+  color: #F5F5F5;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* General Section */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+  background-color: #F1E2D0;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+}
+
+#about h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2.7rem;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+#about p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto 20px auto;
+}
+
+/* Packages Section */
+.package-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 60px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+}
+
+.package-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-container, .package {
+  flex: 1;
+  height: 100%;
+  min-width: 0;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.package-image {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.package {
+  background-color: #F1E2D0;
+  
+  border-radius: 15px;
+  box-shadow: 8px 8px 0 rgba(0,0,0,0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: #c85e45;
+  color: #333;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.package.cruiser .tag {
+  background-color: #9bb9b6;
+}
+
+.package.prestige .tag {
+  background-color: #e5a945;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.package ul {
+  list-style: disc inside;
+  padding-left: 20px;
+  color: #333;
+  flex-grow: 1;
+}
+
+.package ul li {
+  margin: 8px 0;
+}
+
+/* How to Book Section Styles */
+#how-to-book {
+  background-color: #F1E2D0;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+}
+
+#how-to-book h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2.7rem;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+#how-to-book p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto 20px auto;
+}
+
+.dm-links {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1.5rem 0;
+}
+
+.dm-item {
+  text-align: center;
+}
+
+.dm-item p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Gallery Section */
+#gallery {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#gallery h2 {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #B0B0B0;
+  color: #333333;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .social a {
+  color: #333333;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  margin-right: 7rem;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  border-radius: 3px;
+}
+
+.ham-nav-links {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1700px) {
+  .header-title { display: none; }
+}
+
+
+
+@media (max-width: 1024px) {
+  .header-title { display: none; }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ham-nav-links {
+    display: none;
+    flex-direction: column;
+    background: #F1E2D0;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    left: 150px;
+    box-shadow: 7px 7px 20px gray;
+    z-index: 1;
+    width: 100px;
+    border-radius: 4px;
+  }
+  .nav-links {
+      display: none;
+  }
+
+  .ham-nav-links.show {
+    display: flex;
+  }
+
+  .social-icon {
+  font-size: 1.5rem;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  }
+
+
+  .hero, .hero2 { height: 60vh; }
+  .hero h1 { font-size: 2.5rem; padding: 10px; }
+
+  .package-row { flex-direction: column; height: auto; margin-bottom: 40px; }
+  .image-container { display: none; }
+  .package { width: 90%; margin: 0 auto; text-align: center; }
+  .package-header { flex-direction: column; align-items: center; }
+  .package-header .tag { margin-bottom: 10px; }
+
+  .dm-links { flex-direction: column; align-items: center; }
+}
+
+@media (max-width: 580px) {
+  .header-title h1 { font-size: 2rem; }
+  .hero, .hero2 { height: 30vh; }
+  .hero h1 { font-size: 1rem; }
+  section h2 { font-size: 2rem; }
+    
+  nav {
+    right: 10px;
+  }
+
+
+  .book-button {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 6px 0px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    width: 30px;
+  }
+
+    .nav-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-actions a.social-icon {
+    flex: 0 0 auto;
+  }
+
+  .nav-actions a.book-button {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+.hamburger {
+        left: 50px;
+    
+  }
+ .ham-nav-links {
+    left: 50px;
+
+  }
+
+}
+
+
