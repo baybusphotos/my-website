@@ -29,8 +29,8 @@ header {
   align-items: center;
   padding: 0 50px;
   
-  top: 0;
-  z-index: 1000;
+  position: relative;
+  z-index: 9999;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
@@ -143,6 +143,7 @@ nav {
   position: absolute;
   top: 120px;
   left: 20px;
+  z-index: 10000;
   background: #F1E2D0;
   flex-direction: column;
   width: 180px;
