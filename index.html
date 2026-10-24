@@ -10,9 +10,9 @@
   <meta property="og:url" content="https://www.baybusphotobooth.com/">
   <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
-  <title>Bay Bus Photo Booth | VW Photo Booth Rental in Southern California | Weddings & Events </title>
+  <title>VW Photo Booth Rental in Southern California | Weddings & Events | Bay Bus Photo Booth</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Style.css">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -26,6 +26,7 @@
   <link rel="icon" href="images/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
   <link rel="shortcut icon" href="images/favicon-96x96.png">
+
 
 <script type="application/ld+json">
 {
@@ -44,8 +45,7 @@
   ],
   "sameAs": [
     "https://instagram.com/baybusphotos",
-    "https://facebook.com/baybusphotos",
-    "https://www.facebook.com/people/Bay-Bus-Photo-Booth/61578016355780/"
+    "https://facebook.com/baybusphotos"
   ]
 }
 </script>
@@ -57,14 +57,14 @@
 <!-- ================= HEADER ================= -->
 <header>
 
-  <div class="hamburger" id="hamburger">
+  <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation menu" aria-controls="ham-nav-links" aria-expanded="false">
     <span></span>
     <span></span>
     <span></span>
-  </div>
+  </button>
 
   <div class="logo-container">
-    <img src="images/logo.png" alt="Bay Bus Photo Booth Logo" class="logo-image">
+    <img src="images/logo.png" alt="Bay Bus Photo booth Logo" class="logo-image">
   </div>
 
   <div class="header-title">
@@ -81,11 +81,11 @@
     </ul>
 
     <div class="nav-actions">
-      <a href="https://instagram.com/baybusphotos" target="_blank" class="social-icon">
+      <a href="https://instagram.com/baybusphotos" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Bay Bus Photo Booth on Instagram">
         <i class="fab fa-instagram"></i>
       </a>
 
-      <a href="https://www.facebook.com/people/Bay-Bus-Photo-Booth/61578016355780/" target="_blank" class="social-icon">
+      <a href="https://www.facebook.com/people/Bay-Bus-Photo-Booth/61578016355780/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit Bay Bus Photo Booth on Facebook">
         <i class="fab fa-facebook-f"></i>
       </a>
 
@@ -105,7 +105,7 @@
   </ul>
 
 </header>
-<main></main>
+<main>
 <!-- ================= HERO ================= -->
 <section class="hero reveal">
   <h1>Keep the memories rolling</h1>
@@ -187,6 +187,21 @@
             </a>
 
 
+            <!-- Temecula Creek Cottages -->
+            <a href="https://www.temeculacreekcottages.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="venue-card">
+
+                <img src="images/logos/Temecula-Creek-Cottages.png"
+                     alt="Temecula Creek Cottages wedding venue in Temecula California">
+
+                <h3>Temecula Creek Cottages</h3>
+                <p>Temecula, California</p>
+
+            </a>
+
+
             <!-- Duplicate Cards For Infinite Scroll -->
 
             <a href="https://www.coyotehillsgc.com/" 
@@ -233,6 +248,18 @@
                 <img src="images/logos/citrus-state-park.png" alt="">
                 <h3>California Citrus State Historic Park</h3>
                 <p>Riverside, California</p>
+
+            </a>
+
+
+            <a href="https://www.temeculacreekcottages.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="venue-card">
+
+                <img src="images/logos/Temecula-Creek-Cottages.png" alt="">
+                <h3>Temecula Creek Cottages</h3>
+                <p>Temecula, California</p>
 
             </a>
 
@@ -287,8 +314,8 @@
         <li>Unlimited high-quality photo prints</li>
         <li>Custom-designed photo strip to match your event</li>
         <li>Playful props for guests</li>
-        <li>Onsite attendant</li>
-        <li>Digital copies after event</li>
+        <li>Professional onsite attendant</li>
+        <li>Digital gallery of photos after event</li>
       </ul>
     </div>
 
@@ -305,13 +332,42 @@
         <li>Unlimited high-quality photo prints</li>
         <li>Custom-designed photo strip to match your event</li>
         <li>Playful props for guests</li>
-        <li>Onsite attendant</li>
-        <li>Digital copies after event</li>
-        <li>Guest book for duplicate strips + messages</li>
+        <li>Professional onsite attendant</li>
+        <li>Digital gallery of photos after event</li>
       </ul>
 
     </div>
 
+  </div>
+
+</section>
+
+<!-- ================= ADD-ONS ================= -->
+<section id="addons" class="section add-ons-section reveal">
+
+  <h2>Add-Ons</h2>
+  <p class="add-ons-intro">Personalize your photo booth experience</p>
+
+  <div class="add-ons-grid">
+    <article class="add-on-card">
+      <h3>Keepsake Memory Book</h3>
+      <div class="add-on-price">$50</div>
+      <p>Give your guests a place to paste a photo strip and leave a heartfelt message. 
+        You'll take home a one-of-a-kind keepsake filled with photos and memories from your celebration.</p>
+    </article>
+
+    <article class="add-on-card">
+      <h3>Additional Photo Booth Time</h3>
+      <div class="add-on-price">$100 <span>per hour</span></div>
+      <p>Keep the fun going longer with additional active photo booth time.</p>
+    </article>
+
+    <article class="add-on-card">
+      <h3>Idle Time</h3>
+      <div class="add-on-price">$50 <span>per hour</span></div>
+      <p>Need the bus set up early or paused during your ceremony, dinner, or speeches? Idle time keeps the booth onsite and ready when you are.</p>
+      <p class="add-on-note">Billed in 30-minute increments ($25 per increment).</p>
+    </article>
   </div>
 
 </section>
@@ -327,12 +383,12 @@
 
   <div class="dm-links">
 
-    <a href="https://m.me/baybusphotos" target="_blank" class="dm-item">
+    <a href="https://m.me/baybusphotos" target="_blank" rel="noopener noreferrer" class="dm-item">
       <i class="fab fa-facebook-messenger fa-3x"></i>
       <p>Message us on Facebook</p>
     </a>
 
-    <a href="https://instagram.com/baybusphotos" target="_blank" class="dm-item">
+    <a href="https://instagram.com/baybusphotos" target="_blank" rel="noopener noreferrer" class="dm-item">
       <i class="fab fa-instagram fa-3x"></i>
       <p>DM us on Instagram</p>
     </a>
@@ -369,7 +425,9 @@
     <input 
       type="text" 
       name="_gotcha" 
-      style="display:none">
+      style="display:none"
+      tabindex="-1"
+      aria-hidden="true">
 
     <div class="form-grid">
 
@@ -484,6 +542,28 @@
       </div>
 
 
+      <fieldset class="form-group full-width add-on-options">
+
+        <legend>Interested Add-Ons <span>(optional)</span></legend>
+
+        <label class="add-on-option">
+          <input type="checkbox" name="add_ons[]" value="Keepsake Memory Book ($50)">
+          <span>Keepsake Memory Book — $50</span>
+        </label>
+
+        <label class="add-on-option">
+          <input type="checkbox" name="add_ons[]" value="Additional Photo Booth Time ($100 per hour)">
+          <span>Additional Photo Booth Time — $100 per hour</span>
+        </label>
+
+        <label class="add-on-option">
+          <input type="checkbox" name="add_ons[]" value="Idle Time ($50 per hour; billed in 30-minute increments)">
+          <span>Idle Time — $50 per hour, billed in 30-minute increments</span>
+        </label>
+
+      </fieldset>
+
+
       <div class="form-group full-width">
 
         <label for="message">
@@ -524,12 +604,12 @@
   <h2>Follow Along</h2>
 
   <div class="instagram-wrapper">
-
     <!-- LightWidget WIDGET -->
-    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-    <iframe src="https://cdn.lightwidget.com/widgets/faae3a027f5056208fc6b376429101ea.html" 
+     <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+     <iframe src="https://cdn.lightwidget.com/widgets/faae3a027f5056208fc6b376429101ea.html" 
+        title="Bay Bus Photo Booth Instagram feed"
         scrolling="no" 
-        allowtransparency="true"
+        allowtransparency="true" 
         class="lightwidget-widget" 
         style="width:100%;border:0;overflow:hidden;"
       ></iframe>
@@ -583,7 +663,9 @@ const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('ham-nav-links');
 
 hamburger.addEventListener('click', () => {
-  nav.classList.toggle('show');
+  const isOpen = nav.classList.toggle('show');
+  hamburger.setAttribute('aria-expanded', isOpen);
+  hamburger.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
 });
 
 const observer = new IntersectionObserver(entries => {
